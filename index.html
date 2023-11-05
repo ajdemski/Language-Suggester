@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
 <body>
-  
+  <div class="title">
+    <h1>Programming Language Suggester</h1>
+  </div>
+  <form class="survey">
+    <div class="dropdown1">
+      <label for="question1">Which planet in our solar system is known for its beautiful rings?</label>
+      <select id="options1">
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+      </select>
+    </div>
+    <div class="dropdown2">
+      <label for="question2"></label>
+      <select id="options2">
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+      </select>
+    </div>
+    <div class="dropdown3">
+      <label for="question3"></label>
+      <select id="options3">
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+      </select>
+    </div>
+    <div class="question4">
+      <label for="scale">On a scale of 1-10, how comfortable are you with using a computer, with 1 being the least?</label>
+      <input type="number" id="scale" required />
+    </div>
+    <div class="question5">
+      <label for="time">How many hours per week are you wanting to dedicate to new programming languages? Please enter a number 1-10 with 1 being the least.</label>
+      <input type="number" id="time" required />
+    </div>
+    <div class="button">
+      <button type="submit">Submit!</button>
+    </div>
+  </form>
+  <div id="result">
+    <p id="language"></p>
+  </div>
 </body>
+
 </html>
