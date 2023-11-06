@@ -24,7 +24,7 @@ _A Code Review Project from Aaron Demski, in this repository you'll find an inde
 * _Open index.html in the file you cloned/forked._
 
 ## _Link To Site_
-* _ _
+* _https://ajdemski.github.io/Language-Suggester/_
 
 ## Known Bugs
 
