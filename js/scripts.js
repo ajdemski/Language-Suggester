@@ -11,6 +11,18 @@ function suggestionGenerator(option1, option2, option3, scale, time) {
     chameleon: 1,
     panda: 2,
     platypus: 3,
+  };
+
+  const totalValue = optionValues[option1] + optionValues[option2] + optionValues[option3] + scale + time;
+
+  if (totalValue >= 15) {
+    return "You should learn C#!";
+  } else if (totalValue >= 12) {
+    return "You should learn JavaScript!";
+  } else if (totalValue >= 9) {
+    return "You should learn Ruby!";
+  } else {
+    return "You should learn Python!";
   }
 }
 
