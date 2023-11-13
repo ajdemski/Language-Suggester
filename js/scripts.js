@@ -1,6 +1,6 @@
-// Business Interface Logic
+// Business Logic
 
-function suggestionGenerator(option1, option2, option3, scale, time) {
+function calculateTotalValue(option1, option2, option3, scale, time) {
   const optionValues = {
     mars: 1,
     jupiter: 2,
@@ -13,8 +13,10 @@ function suggestionGenerator(option1, option2, option3, scale, time) {
     platypus: 3,
   };
 
-  const totalValue = optionValues[option1] + optionValues[option2] + optionValues[option3] + scale + time;
+  return optionValues[option1] + optionValues[option2] + optionValues[option3] + scale + time;
+}
 
+function generateSuggestion(totalValue) {
   if (totalValue >= 15) {
     return "You should learn C#!";
   } else if (totalValue >= 12) {
@@ -39,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const time = parseInt(document.getElementById("time").value);
     const result = document.getElementById("result");
 
-    result.textContent = suggestionGenerator(option1, option2, option3, scale, time);
+    const totalValue = calculateTotalValue(option1, option2, option3, scale, time);
+    result.textContent = generateSuggestion(totalValue);
   });
 });
