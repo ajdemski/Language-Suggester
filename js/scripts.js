@@ -1,12 +1,16 @@
 // Business Interface Logic
 
 function suggestionGenerator(option1, option2, option3, scale, time) {
-  if (option1 === "saturn" && scale >= 5 && time >= 3) {
-    return "You should learn C#!";
-  } else if (option2 === "mountEverest" && scale >= 7 && time >= 5) {
-    return "You should learn JavaScript!";
-  } else {
-    return "You should learn Python!";
+  const optionValues = {
+    mars: 1,
+    jupiter: 2,
+    saturn: 3,
+    theEiffelTower: 1,
+    mountEverest: 2,
+    theGrandCanyon: 3,
+    chameleon: 1,
+    panda: 2,
+    platypus: 3,
   }
 }
 
